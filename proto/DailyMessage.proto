@@ -1,0 +1,15 @@
+edition = "2024";
+
+option go_package = "GitHub/aledxandergmiles/proto/Announcer/DailyMessages";
+
+message Date {
+  string date = 1;
+}
+
+message DailyMessage {
+  string daily_message = 1;
+}
+
+service Messenger {
+  rpc GetDailyMessage(Date) returns (DailyMessage);
+}
