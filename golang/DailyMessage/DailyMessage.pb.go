@@ -4,13 +4,14 @@
 // 	protoc        v6.33.4
 // source: DailyMessage.proto
 
-package DailyMessages
+package DailyMessage
 
 import (
-	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
-	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
 	unsafe "unsafe"
+
+	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
+	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 )
 
 const (
@@ -188,11 +189,14 @@ const file_DailyMessage_proto_rawDesc = "" +
 	"\tMessenger\x12'\n" +
 	"\x0fGetDailyMessage\x12\x05.Date\x1a\r.DailyMessageB7Z5GitHub/aledxandergmiles/proto/Announcer/DailyMessagesb\beditionsp\xe9\a"
 
-var file_DailyMessage_proto_msgTypes = make([]protoimpl.MessageInfo, 2)
-var file_DailyMessage_proto_goTypes = []any{
-	(*Date)(nil),         // 0: Date
-	(*DailyMessage)(nil), // 1: DailyMessage
-}
+var (
+	file_DailyMessage_proto_msgTypes = make([]protoimpl.MessageInfo, 2)
+	file_DailyMessage_proto_goTypes  = []any{
+		(*Date)(nil),         // 0: Date
+		(*DailyMessage)(nil), // 1: DailyMessage
+	}
+)
+
 var file_DailyMessage_proto_depIdxs = []int32{
 	0, // 0: Messenger.GetDailyMessage:input_type -> Date
 	1, // 1: Messenger.GetDailyMessage:output_type -> DailyMessage
